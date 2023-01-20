@@ -16,7 +16,7 @@ vim.opt.cursorline = true
 vim.opt.number = true
 vim.opt.scrolloff = 12
 vim.opt.signcolumn = "yes:1"
-vim.opt.relativenumber = true 
+vim.opt.relativenumber = true
 
 vim.opt.showcmd = true
 vim.opt.autoread = true
