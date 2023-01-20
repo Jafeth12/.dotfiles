@@ -44,7 +44,9 @@ return require('packer').startup(function(use)
         "neovim/nvim-lspconfig", -- sets up config to enable comms between nvim and my lsp's
     }
 
-    -- use 'akinsho/toggleterm.nvim'
+    -- bufferline to bonito
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
     use 'rafi/awesome-vim-colorschemes'
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-tree/nvim-web-devicons'
