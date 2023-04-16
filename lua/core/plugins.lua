@@ -47,13 +47,15 @@ return require('packer').startup(function(use)
     -- bufferline to bonito
     use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
+    -- random shit
     use 'rafi/awesome-vim-colorschemes'
     use 'nvim-tree/nvim-tree.lua'
     use 'nvim-tree/nvim-web-devicons'
     use 'nvim-lualine/lualine.nvim'
     use 'nvim-treesitter/nvim-treesitter' -- syntax highlighting
-    use 'lewis6991/impatient.nvim' -- increase load time
+    use 'lewis6991/impatient.nvim' -- decrease load time
     use 'christoomey/vim-tmux-navigator'
+    use 'stevearc/vim-arduino'
 
     -- code completion
     use "hrsh7th/nvim-cmp"
@@ -61,6 +63,7 @@ return require('packer').startup(function(use)
     use "L3MON4D3/LuaSnip"
     use "saadparwaiz1/cmp_luasnip"
     use "rafamadriz/friendly-snippets"
+    use "windwp/nvim-ts-autotag"
 
 --================== PLUGINS END HERE =====================
 --
