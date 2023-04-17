@@ -24,10 +24,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
-  -- use 'wbthomason/packer.nvim'
+
 --================== PLUGINS BEGIN HERE =====================
     {
         'numToStr/Comment.nvim',
+         keys = {
+          { "gcc", "", desc = "comment" },
+        },
+        lazy = true,
         config = function()
             require('Comment').setup()
         end
@@ -43,12 +47,6 @@ require('lazy').setup({
         version = '0.1.0',
         dependencies = { { 'nvim-lua/plenary.nvim' } }
     },
-
-    -- {
-    --     "akinsho/toggleterm.nvim", version = '*', config = function()
-    --     require("toggleterm").setup()
-    --     end
-    -- },
 
     {
         "williamboman/mason.nvim", -- LSP servers packet manager
@@ -66,20 +64,41 @@ require('lazy').setup({
     -- random shit
     'rafi/awesome-vim-colorschemes',
     'nvim-tree/nvim-tree.lua',
-    'nvim-tree/nvim-web-devicons',
     'nvim-lualine/lualine.nvim',
     'nvim-treesitter/nvim-treesitter', -- syntax highlighting
-    -- 'lewis6991/impatient.nvim', -- decrease load time
-    'christoomey/vim-tmux-navigator',
-    -- 'stevearc/vim-arduino',
+    {
+        'christoomey/vim-tmux-navigator',
+        lazy = true,
+        keys = {
+            { "<C-l>", "", desc = "l" },
+            { "<C-k>", "", desc = "k" },
+            { "<C-j>", "", desc = "j" },
+            { "<C-h>", "", desc = "k" },
+        },
+    },
 
     -- code completion
     "hrsh7th/nvim-cmp",
     "hrsh7th/cmp-nvim-lsp",
-    "L3MON4D3/LuaSnip",
     "saadparwaiz1/cmp_luasnip",
     "rafamadriz/friendly-snippets",
-    "windwp/nvim-ts-autotag",
+    {
+        "L3MON4D3/LuaSnip",
+        lazy = true,
+        keys = {
+            { "!s", "", desc = "luasnip" },
+        },
+    },
+
+    {
+        "windwp/nvim-ts-autotag",
+        lazy = true,
+        keys = {
+            { "!a", "", desc = "tag1" },
+        }
+    },
+
+    { "catppuccin/nvim", name = "catppuccin" },
 
 --================== PLUGINS END HERE =====================
 })

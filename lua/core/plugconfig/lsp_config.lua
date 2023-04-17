@@ -3,15 +3,10 @@ require("mason-lspconfig").setup({
     ensure_installed = {
         "lua_ls",
         "clangd",
-        "bashls",
-        "cssls",
         "eslint",
         "html",
-        "jsonls",
         "tailwindcss",
         "tsserver",
-        "volar",
-        "prismals"
     }
 })
 
@@ -37,11 +32,6 @@ require("lspconfig").clangd.setup {
     capabilities = capabilities,
 }
 
-require("lspconfig").cssls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-}
-
 require("lspconfig").eslint.setup {
     on_attach = on_attach,
     capabilities = capabilities,
@@ -53,16 +43,6 @@ require("lspconfig").html.setup {
 }
 
 require("lspconfig").tsserver.setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-}
-
-require("lspconfig").jsonls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-}
-
-require("lspconfig").solargraph.setup {
     on_attach = on_attach,
     capabilities = capabilities,
 }
