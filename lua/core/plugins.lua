@@ -42,6 +42,7 @@ require('lazy').setup({
       -- version = 'release', -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
     },
 
+
     {
         'nvim-telescope/telescope.nvim',
         version = '0.1.0',
@@ -77,6 +78,9 @@ require('lazy').setup({
         },
     },
 
+    -- COPILOTO AJJAXD
+    "github/copilot.vim",
+
     -- code completion
     "hrsh7th/nvim-cmp",
     "hrsh7th/cmp-nvim-lsp",
@@ -99,6 +103,8 @@ require('lazy').setup({
     },
 
     { "catppuccin/nvim", name = "catppuccin" },
+    {"rebelot/kanagawa.nvim"},
+
 
 --================== PLUGINS END HERE =====================
 })
