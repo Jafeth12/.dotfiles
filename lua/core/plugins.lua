@@ -104,6 +104,8 @@ require('lazy').setup({
 
     { "catppuccin/nvim", name = "catppuccin" },
     {"rebelot/kanagawa.nvim"},
+    { 'projekt0n/github-nvim-theme' },
+    {'aonemd/quietlight.vim'},
 
 
 --================== PLUGINS END HERE =====================

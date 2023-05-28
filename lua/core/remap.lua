@@ -39,6 +39,8 @@ map('n', '<S-Tab>', '<cmd>bp<CR>', snoremap)
 
 -- random useful stuff
 map('i', '<C-c>', '<Esc>', snoremap)
+map('n', '<C-c>', '<cmd>w<CR>', snoremap)
 map('n', '<Leader>a', 'A;<Esc>0w', snoremap)
 map('n', '<Leader>wa', '<cmd>w<CR>', snoremap)
-map('n', '<Leader>wq', '<cmd>wq<CR>', snoremap);
+map('n', '<Leader>wq', '<cmd>wq<CR>', snoremap)
+map('n', ',,', '<cmd>noh<CR>', snoremap)

@@ -2,7 +2,8 @@ require('lualine').setup {
 
     options = {
         icons_enabled = true,
-        theme = 'horizon',
+        -- theme = 'horizon',
+        theme = 'ayu',
     },
 
     sections = {
