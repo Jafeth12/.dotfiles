@@ -37,6 +37,18 @@ require('lazy').setup({
         end
     },
 
+    -- note taking
+    {
+        'vimwiki/vimwiki',
+        lazy = true,
+        keys = {
+            { "<leader>ww", ":VimwikiIndex<CR>", desc = "wiki" },
+            { "<leader>wt", ":VimwikiTabIndex<CR>", desc = "wiki" },
+            { "<leader>wi", ":VimwikiDiaryIndex<CR>", desc = "wiki" },
+            { "<leader>wd", ":VimwikiMakeDiaryNote<CR>", desc = "wiki" },
+        },
+    },
+
     {
       'lewis6991/gitsigns.nvim', -- git diffs in sign column.
       -- version = 'release', -- To use the latest release (do not use this if you run Neovim nightly or dev builds!)
@@ -102,10 +114,12 @@ require('lazy').setup({
         }
     },
 
+    -- themes
     { "catppuccin/nvim", name = "catppuccin" },
-    {"rebelot/kanagawa.nvim"},
-    { 'projekt0n/github-nvim-theme' },
-    {'aonemd/quietlight.vim'},
+    "phanviet/vim-monokai-pro",
+    "rebelot/kanagawa.nvim",
+    "projekt0n/github-nvim-theme",
+    "aonemd/quietlight.vim",
 
 
 --================== PLUGINS END HERE =====================
