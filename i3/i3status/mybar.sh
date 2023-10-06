@@ -1,0 +1,1 @@
+/home/jafeth/.config/i3status/mybar.sh
