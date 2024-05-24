@@ -57,7 +57,7 @@ require('lazy').setup({
 
     {
         'nvim-telescope/telescope.nvim',
-        version = '0.1.0',
+        version = '0.1.5',
         dependencies = { { 'nvim-lua/plenary.nvim' } }
     },
 
@@ -123,6 +123,17 @@ require('lazy').setup({
     "projekt0n/github-nvim-theme",
     "aonemd/quietlight.vim",
     "https://github.com/loctvl842/monokai-pro.nvim",
+    "folke/tokyonight.nvim",
+
+    {
+        'akinsho/flutter-tools.nvim',
+        lazy = false,
+        dependencies = {
+            'nvim-lua/plenary.nvim',
+            'stevearc/dressing.nvim', -- optional for vim.ui.select
+        },
+        config = true
+    }
 
 
 --================== PLUGINS END HERE =====================
