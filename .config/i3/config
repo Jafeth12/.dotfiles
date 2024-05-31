@@ -7,8 +7,8 @@
 
 # exec_always --no-startup-id compton
 exec_always --no-startup-id picom --experimental-backends
-# exec --no-startup-id feh --bg-scale -zsF ~/Pictures/wg/
-exec --no-startup-id feh --bg-scale ~/Pictures/wg/f1_1.jpg
+exec --no-startup-id feh --bg-scale -zsF ~/Pictures/wg/
+# exec --no-startup-id feh --bg-scale ~/Pictures/wg/f1_1.jpg
 
 exec_always --no-startup-id for id in $(xinput list | grep "pointer" | cut -d '=' -f 2 | cut -f 1); do xinput --set-prop $id 'libinput Accel Profile Enabled' 0, 1; done
 
@@ -271,29 +271,5 @@ bar {
             urgent_workspace   #ffffff #900000
     }
 
-    # status_command i3status
-            # -m      pomodoro            \
-            # -m      pulsein              \
-	status_command ~/.i3/bumblebee-status/bumblebee-status \
-            -m      battery             \
-            -m      disk:/           \
-            -m      disk:home           \
-			-m      nic                 \
-            -m      memory              \
-            -m      spotify             \
-            -m      spacer              \
-            -m      pulseout              \
-            -m      pulsein              \
-            -m      layout              \
-            -m      time                \
-            -m      date                \
-            -p          nic.format="{ip}"               \
-            -p          battery.decorate="false"        \
-            -p          disk.format="{left}"            \
-            -p          memory.format="{used}"          \
-            -p          home.path=/home/                \
-            -p          time.format="%H:%M"          \
-            -p          date.format="%d/%m/%y"          \
-            -p          pulsectl.left-click=select_default_device_popup \
-			-t dracula-powerline
+    status_command i3status
 }

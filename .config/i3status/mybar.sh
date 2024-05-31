@@ -204,7 +204,6 @@ echo '[]'                   # We send an empty first array of blocks to make the
 (while :;
 do
 	echo -n ",["
-  mycrypto
   myip_public
   myvpn_on
   myip_local
