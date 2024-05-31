@@ -26,16 +26,16 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
 
 --================== PLUGINS BEGIN HERE =====================
-    {
-        'numToStr/Comment.nvim',
-         keys = {
-          { "gcc", "", desc = "comment" },
-        },
-        lazy = true,
-        config = function()
-            require('Comment').setup()
-        end
-    },
+    -- {
+    --     'numToStr/Comment.nvim',
+    --      keys = {
+    --       { "gcc", "", desc = "comment" },
+    --     },
+    --     lazy = true,
+    --     config = function()
+    --         require('Comment').setup()
+    --     end
+    -- },
 
     -- note taking
     {
@@ -57,7 +57,6 @@ require('lazy').setup({
 
     {
         'nvim-telescope/telescope.nvim',
-        version = '0.1.5',
         dependencies = { { 'nvim-lua/plenary.nvim' } }
     },
 
@@ -70,7 +69,6 @@ require('lazy').setup({
     -- bufferline to bonito
     {
         'akinsho/bufferline.nvim',
-        version = "v3.*",
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
 
@@ -98,6 +96,8 @@ require('lazy').setup({
     -- code completion
     "hrsh7th/nvim-cmp",
     "hrsh7th/cmp-nvim-lsp",
+    "hrsh7th/cmp-buffer",
+    "hrsh7th/cmp-path",
     "saadparwaiz1/cmp_luasnip",
     "rafamadriz/friendly-snippets",
     {
