@@ -9,7 +9,7 @@ require("mason-lspconfig").setup({
         "tsserver",
         "intelephense",
         "pyright",
-        "gopls",
+        -- "gopls",
         -- "omnisharp_mono",
         "omnisharp",
     }

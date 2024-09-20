@@ -26,16 +26,16 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
 
 --================== PLUGINS BEGIN HERE =====================
-    -- {
-    --     'numToStr/Comment.nvim',
-    --      keys = {
-    --       { "gcc", "", desc = "comment" },
-    --     },
-    --     lazy = true,
-    --     config = function()
-    --         require('Comment').setup()
-    --     end
-    -- },
+    {
+        'numToStr/Comment.nvim',
+         keys = {
+          { "gcc", "", desc = "comment" },
+        },
+        lazy = false,
+        config = function()
+            require('Comment').setup()
+        end
+    },
 
     -- note taking
     {
@@ -81,7 +81,7 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter', -- syntax highlighting
     {
         'christoomey/vim-tmux-navigator',
-        lazy = true,
+        lazy = false,
         keys = {
             { "<C-l>", "", desc = "l" },
             { "<C-k>", "", desc = "k" },
