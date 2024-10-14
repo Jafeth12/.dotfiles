@@ -44,3 +44,6 @@ map('n', '<Leader>a', 'A;<Esc>0w', snoremap)
 map('n', '<Leader>wa', '<cmd>w<CR>', snoremap)
 map('n', '<Leader>wq', '<cmd>wq<CR>', snoremap)
 map('n', ',,', '<cmd>noh<CR>', snoremap)
+
+map('v', '<Leader>y', '"+y', snoremap)
+map('n', '<Leader>y', '"+y', snoremap)

@@ -133,7 +133,9 @@ require('lazy').setup({
             'stevearc/dressing.nvim', -- optional for vim.ui.select
         },
         config = true
-    }
+    },
+
+    'jwalton512/vim-blade'
 
 
 --================== PLUGINS END HERE =====================

@@ -1,1 +1,11 @@
+local function map(mode, l, r, opts)
+      opts = opts or {}
+      opts.buffer = bufnr
+      vim.keymap.set(mode, l, r, opts)
+end
+
 require("gitsigns").setup()
+
+local gitsigns = require("gitsigns")
+map('n', '<Leader>gb', gitsigns.blame_line)
+

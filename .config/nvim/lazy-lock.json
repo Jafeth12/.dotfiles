@@ -30,6 +30,7 @@
   "quietlight.vim": { "branch": "master", "commit": "61b00ed7c9678c2b23a5ceec8b895001f76af56b" },
   "telescope.nvim": { "branch": "master", "commit": "dfa230be84a044e7f546a6c2b0a403c739732b86" },
   "tokyonight.nvim": { "branch": "main", "commit": "7e5ef71a103e7de5fe6c05f5d6ab97d1640f08cf" },
+  "vim-blade": { "branch": "master", "commit": "9534101808cc320eef003129a40cab04b026a20c" },
   "vim-monokai-pro": { "branch": "master", "commit": "6c449e5d4ef6086c519de0544d4aca46c0a9596c" },
   "vim-tmux-navigator": { "branch": "master", "commit": "5b3c701686fb4e6629c100ed32e827edf8dad01e" },
   "vimwiki": { "branch": "dev", "commit": "69318e74c88ef7677e2496fd0a836446ceac61e8" }

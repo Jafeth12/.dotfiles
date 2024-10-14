@@ -4,6 +4,8 @@ export PATH=/usr/bin:$PATH
 export PATH=/usr/sbin:$PATH
 export PATH=/home/jafeth/.jdks/corretto-11.0.17/bin:$PATH
 
+alias kill80='sudo lsof -t -i tcp:80 -s tcp:listen | sudo xargs kill'
+
 alias quartusviejo='/home/jafeth/intelFPGA_lite/20.1/quartus/bin/quartus --64bit &'
 alias quartus='/home/jafeth/temp/quartush/exe_quartus.sh' # si quiere detach poner -d al final del script
 alias vsim='/home/jafeth/temp/quartush/exe_modelsim.sh' # si quiere detach poner -d al final del script
